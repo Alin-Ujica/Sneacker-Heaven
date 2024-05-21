@@ -1,0 +1,945 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    letter-spacing: -1px;
+}
+
+nav {
+    height: 85px;
+    width: 100%;
+    background-color: #000;
+    padding: 0px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-categories{
+    width:auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* UI KIT */
+h1 {
+    font-weight: bold; 
+    font-size: 40px;
+    color: #000;
+}
+
+h2 {
+    font-weight: semibold;
+    font-size:32px;
+    color: #fff;
+}
+
+h3 {
+    font-weight: bold;
+    font-size:30px;
+    color: #000;
+}
+
+h4 {
+    font-weight: semibold;
+    font-size:28px;
+    color: #000;
+}
+
+h5 {
+    font-weight: semibold;
+    font-size:24px;
+    color: #000;
+}
+
+.h5-purple {
+    color: #8F57FB;
+    font-size: 24px;
+    font-weight: semibold;
+}
+
+h6 {
+    font-weight: bold;
+    font-size:22px;
+    color: #000;
+}
+
+p {
+    font-size:20px;
+    color: #000;
+}
+
+.p-purple {
+    font-weight: semibold;
+    font-size:20px;
+    color: #5D11EF;
+}
+
+.btn-1 {
+    background-color: #8F57FB;
+    padding: 5px;
+    width: 150px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    border-radius:5px;
+    transition: background-color 200ms ease-in;
+}
+
+.btn-1:hover {
+    background-color: #5D11EF;
+}
+
+.btn-2 {
+    background-color: #C8ADFD;
+    border: 1px solid #C8ADFD;
+    color: #000;
+    padding: 5px;
+    width: 150px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    border-radius:5px;
+    transition: background-color 200ms ease-in;
+}
+
+.btn-2:hover {
+    background-color: hsla(260, 95%, 84%, 0.387);
+}
+
+.btn-3 {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #000;
+    padding: 5px;
+    width: 150px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    border-radius:5px;
+    transition: background-color 200ms ease-in;
+}
+
+.btn-3:hover {
+    background-color: hsla(0, 0%, 100%, 0.273);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.link1 {
+  text-decoration: none;
+  color: #000;
+}
+
+.link1:hover {
+    color: #8F57FB;
+    text-decoration: underline;
+}
+
+.link2 {
+    text-decoration: none;
+    color: #8F57FB;
+  }
+  
+.link2:hover {
+      color: #C8ADFD;
+      text-decoration: underline;
+  }
+
+.link3 {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+.link3:hover {
+      color: #000;
+      text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+/* Navigation */
+.hamburger {
+    display: none;
+}
+
+.hamburger img {
+    height: 23px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+nav .logo {
+    height: 70px;
+    overflow: hidden;
+}
+
+
+
+.nav-buttons input {
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    height: 23px;
+    margin-right: 15px;
+}
+
+.nav-buttons input:focus {
+ outline-style: none;
+}
+
+.nav-buttons img {
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-left: 15px;
+}
+
+.nav-buttons ::placeholder {
+    color: #000;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROMO */
+
+#promo-img {
+    width: 100%;
+    height: 700px;
+    background-image: url('../images/promo-img2\ \(Medium\).jpg');
+    background-size: 1366px 768px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ #promo-img .btn-1 {
+    position: relative;
+    top: 300px;
+}
+
+
+
+
+
+
+/* products section */
+
+ section.products {
+    padding: 100px 150px;
+ }
+
+ section.products a p {
+    margin-top: 25px;
+    padding: 0px;
+    font-weight: 500;
+    display: inline-block;
+ }
+
+
+.product-model{
+  margin-top: 25px;
+  width: 310px;
+}
+
+ .product-model .product-image {
+    width: 310px;
+    height: 310px;
+    position: relative;
+}
+
+.product-model .product-image-1 {
+    background-image: url('../images/product\ image.png');
+}
+.product-model .product-image-2 {
+    background-image: url('../images/product-image-2.png');
+}
+.product-model .product-image-3 {
+    background-image: url('../images/product-image-3.png');
+}
+.product-model .product-image-4 {
+    background-image: url('../images/product-image-4.png');
+}
+.product-model .product-image-5 {
+    background-image: url('../images/product-image-5.png');
+}
+.product-model .product-image-6 {
+    background-image: url('../images/product-image-6.png');
+}
+.product-model .product-image-7 {
+    background-image: url('../images/product-image-7.png');
+}
+.product-model .product-image-8 {
+    background-image: url('../images/product-image-8.png');
+}
+.product-model .product-image-9 {
+    background-image: url('../images/product-image-9.png');
+}
+.product-model .product-image-10 {
+    background-image: url('../images/product-image-10.png');
+}
+.product-model .product-image-11 {
+    background-image: url('../images/product-image-11.png');
+}
+
+.product-models {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0px 20px;
+ }
+
+.product-image img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.product-model .reduction {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius:15px;
+    background-color: #8F57FB;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.product-model h3{
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.product-model p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    left: 5px;
+    bottom: 5px;
+    text-decoration: line-through;
+}
+
+.product-model h4 {
+margin-top: 15px;
+font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BRANDS */
+
+
+section.brands {
+    padding: 0 150px 100px 150px;
+    position: relative;
+}
+
+.brands h1 {
+    margin-bottom: 25px;
+}
+
+.brand-flex .brand {
+    width: 420px;
+    height: 420px;
+}
+
+.brands .brand-flex {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px 20px ;
+}
+
+.brands img {
+    display: none;
+}
+
+.brand-flex .brand-1 {
+    background-image: url('../images/brand-1.png');
+}
+.brand-flex .brand-2 {
+    background-image: url('../images/brand-2.png');
+}
+.brand-flex .brand-3 {
+    background-image: url('../images/brand-3.png');
+}
+.brand-flex .brand-4 {
+    background-image: url('../images/brand-4.png');
+}
+.brand-flex .brand-5 {
+    background-image: url('../images/brand-5.png');
+}
+.brand-flex .brand-6 {
+    background-image: url('../images/brand-6.png');
+}
+
+
+
+
+/* SNEACKER OF THE WEEK */
+
+.sneacker-of-the-week{
+    padding: 0 150px 100px 150px;
+}
+
+.sneacker-of-the-week h1 {
+    margin-bottom: 50px;
+}
+
+ .sneacker-of-the-week .products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px 20px;
+ }
+
+.sneacker-of-the-week .products > img {
+    position: relative;
+    top: -40px;
+    height: 760px;
+}
+
+.sneacker-of-the-week .product-models {
+    width: 640px;
+}
+
+.sneacker-of-the-week .product-models .product1,.sneacker-of-the-week .product-models .product2 {
+    margin-top: 0px;
+}
+
+
+
+
+
+/* INSTA PROMO */
+.insta-promo-section h1 {
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.insta-promo-section .insta-promo {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-content: center;
+    height: 835px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(200,173,253,1) 38%, rgba(143,87,251,1) 69%);
+}
+
+.insta-promo .insta-photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insta-photos .swipe-button-left, .insta-photos .swipe-button-right{
+    width: 40px;
+    height: 40px;
+}
+
+.insta-promo .insta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insta-promo .insta-text h3 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.insta-promo .insta-text h1 {
+ margin: 0;
+}
+
+.insta-promo .insta-text h3 a::before {
+    content: url('../images/instagram-logo-1.png');
+    display: inline-block;
+    position: absolute;
+    right: 280px;
+    top: 5px;
+}
+
+
+
+
+
+/* SOCIAL MEDIA */
+.social-media-section {
+    background-color: #000;
+    background-image: url('../images/logo-no-writing.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 757px 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.social-media-section h2 {
+    z-index: 1;
+}
+
+.social-media-section .social-media-links {
+    display: flex;
+    gap: 0px 128px;
+    z-index: 1;
+}
+
+
+
+
+
+
+/* Foooter */
+footer {
+    height: 550px;
+    width: 100%;
+    background-color: #C8ADFD;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1600px){
+    .product-models {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 0px 20px;
+     }
+
+     .product-models .product-7 {
+        display: none;
+     }
+
+     .product-models .product-8 {
+        display: none;
+     }
+
+     .brands .brand-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 50px 10px ;
+    }
+
+
+    .brand-flex .brand {
+        width: 322px;
+        height: 322px;
+    }
+
+    .brand-flex .brand-1,
+    .brand-flex .brand-2,
+    .brand-flex .brand-3,
+    .brand-flex .brand-4,
+    .brand-flex .brand-5,
+    .brand-flex .brand-6
+     {
+        background-size: 322px 322px;
+    }
+
+   .sneacker-of-the-week .product-models {
+        gap: 0px 20px;
+
+    }
+
+    .sneacker-of-the-week .products {
+        justify-content: space-evenly;
+    }
+   
+    .sneacker-of-the-week .product-image {
+        width: 170px;
+        height: 170px;
+        background-size:170px 170px;
+    }
+
+    .sneacker-of-the-week .product-model{
+        margin-top: 25px;
+        width: 170px;
+      }
+
+      .sneacker-of-the-week .product-image img {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    .sneacker-of-the-week .product-model .reduction {
+        display: inline-block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 3px 10px;
+        border-radius:15px;
+        background-color: #8F57FB;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
+    
+    .sneacker-of-the-week .product-model h3{
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    .sneacker-of-the-week .products > img {
+        position: relative;
+        top: -50px;
+        height: 502px;
+    }
+
+    .sneacker-of-the-week .product-models {
+        width: 362px;
+    }
+}
+
+@media screen and (max-width:1370px) {
+  .insta-photos .insta-image-3 {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:1270px) {
+    .product-models .product-6 {
+        display: none;
+     }
+
+     .product-models .product-5 {
+        display: none;
+     }
+
+     section.brands {
+        padding: 0 100px 100px 100px;
+    }
+
+    .sneacker-of-the-week {
+        padding: 0 10px 100px 10px;
+     }
+
+     .sneacker-of-the-week h1 {
+        margin-left: 100px;
+     }
+
+     .social-media-section .social-media-links {
+        gap: 0px 70px;
+     }
+
+     .social-media-section .social-media-logo {
+        height: 400px;
+     }
+
+}
+
+@media screen and (max-width:1024px) {
+    .insta-photos .insta-image-2 {
+        display: none;
+      }
+}
+
+@media screen and (max-width:940px){
+    section.products {
+        padding: 100px 10px;
+     }
+
+     section.brands {
+        padding: 0 10px 100px 10px;
+    }
+
+     .product-models {
+        gap: 0px 10px;
+     }
+
+     .sneacker-of-the-week h1 , .insta-promo-section h1{
+        margin-left: 0px;
+     }
+
+
+}
+
+@media screen and (max-width:880px) {
+  .nav-categories {
+    display: none;
+  }
+
+  nav .logo {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger .logo2 {
+    height: 70px;
+  }
+
+  #promo-img {
+    background-size: 700px 500px;
+  }
+
+  .social-media-section .social-media-links {
+    gap: 0px 30px;
+    
+ }
+
+ .social-media-section .social-media-links img {
+    height: 70px;
+ }
+}
+
+@media screen and (max-width:808px) {
+    .sneacker-of-the-week .products {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+     .sneacker-of-the-week .products > img {
+        position: relative;
+        top: 0px;
+        width: 362px;
+        order: -1;
+    }
+
+    .insta-photos .insta-image-4 {
+        display: none;
+      }
+}
+
+@media screen and (max-width:674px) {
+    .brands .brand-flex {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    section.brands {
+        padding: 0 10px 50px 10px;
+    }
+
+    .brand-flex .brand-link-3,
+    .brand-flex .brand-link-4,
+    .brand-flex .brand-link-5,
+    .brand-flex .brand-link-6   {
+        display: none;
+    }
+
+    .sneacker-of-the-week h1 {
+        margin-bottom: 25px;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .product-models {
+        gap: 0px 80px;
+    }
+   
+    .product-model .product-image {
+        width: 170px;
+        height: 170px;
+        background-size:170px 170px;
+    }
+
+    .product-model{
+        margin-top: 25px;
+        width: 170px;
+      }
+
+      .product-image img {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+      .product-model .reduction {
+        display: inline-block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 3px 10px;
+        border-radius:15px;
+        background-color: #8F57FB;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
+    
+    .product-model h3{
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    
+    .product-model p {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 14px;
+        position: static;
+        margin-top: 2px;
+        text-decoration: line-through;
+    }
+    
+    .product-model h4 {
+    margin-top: 2px;
+    font-size: 16px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    
+    nav {
+        height: 85px;
+        width: 100%;
+        background-color: #000;
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .nav-buttons input {
+        display: none;
+    }
+
+    .nav-buttons img {
+        height: 30px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .product-models {
+        gap: 0px 5px;
+    }
+
+    
+    .products h1 ,.insta-promo-section h1 , .brands h1, .sneacker-of-the-week h1,footer h1{
+        font-size: 26px;
+     }
+
+
+     .brands .circle {
+        display: inline-block;
+        position: absolute;
+        top: 370px;
+        left: 0;
+        z-index: -1;
+    }
+    .insta-promo-section .insta-text h1 {
+        text-align: center;
+      }
+
+      .social-media-section .social-media-links {
+        gap: 0px 20px;
+        
+     }
+    
+     .social-media-section .social-media-links img {
+        height: 50px;
+     }
+
+     footer {
+        height: 400px;
+     }
+
+
+     footer ul li {
+        font-size: 20px;
+     }
+}
+
+@media screen and (max-width:400px) {
+    .nav-buttons img {
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .hamburger .logo2 {
+        height: 60px;
+      }
+
+      .insta-photos .insta-image-1 {
+        height: 400px;
+      }
+
+
+
+}
