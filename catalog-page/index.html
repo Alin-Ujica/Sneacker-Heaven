@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+           <a href="#"><img src="../images/hamburger-menu.png" class="hamburger-btn"></a>
+        <a href="../index.html"><img src="../images/logo.png" class="logo2"></a>
+        </div>
+         <div class="nav-categories">
+            <ul>
+                <li><a href="../catalog-page/index.html" class="link1"><h5 class="h5-purple">Bărbați</h5></a></li>
+                <li><a href="#" class="link1"><h5 class="h5-purple">Femei</h5></a></li>
+                <li><a href="#" class="link1"><h5 class="h5-purple">Copii</h5></a></li>
+            </ul>
+         </div>
+         <a href="../index.html"><img src="../images/logo.png" class="logo"></a>
+         <div class="nav-buttons">
+            <label for="search"><img src="../images/search-icon.png"></label>
+            <input type="text" placeholder="Search" name="search" id="search">
+            <a href="../login-page/index.html"><img src="../images/account-icon.png" alt="Account"></a>
+            <a href="#"><img src="../images/heart-icon.png" alt="Favorites"></a>
+            <a href="#"><img src="../images/cart-icon.png" alt="Cart"></a>
+        </div>
+    </nav>
+    <section class="products"> 
+        <h1>Încălțăminte Bărbați</h1> 
+        <div class="catalog-filters">
+            <select name="categorii" class="dropdown-filter">
+                <option value=""><p>Categorii </p></option>
+                <option value="imbracaminte">Îmbrăcăminte</option>
+                <option value="incaltaminte">Încălțăminte</option>
+                <option value="accesorii">Accesorii</option>
+            </select>
+            <select name="branduri" class="dropdown-filter">
+                <option value=""><p>Branduri</p></option>
+                <option value="Nike">Nike</option>
+                <option value="Puma">Puma</option>
+                <option value="Adidas">Adidas</option>
+                <option value="New Balance">New Balance</option>
+            </select>
+            <select name="pret" class="dropdown-filter">
+                <option value=""><p>Preț</p></option>
+                <option value="100-200">100-200</option>
+                <option value="200-400">200-400</option>
+                <option value="400-800">400-800</option>
+                <option value="800+">800+</option>
+            </select>
+            <select name="marime" class="dropdown-filter">
+                <option value=""><p>Mărime</p></option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+            </select>
+            <select name="culoare" class="dropdown-filter">
+                <option value=""><p>Culoare</p></option>
+                <option value="negru">Negru</option>
+                <option value="alb">Alb</option>
+                <option value="mov">Roșu<ul></ul></option>
+                <option value="rosu">Verde</option>
+            </select> 
+        </div>
+        <div class="catalog-filters-mobile">
+            <select name="sorteaza" class="dropdown-filter-mobile">
+                <option value=""><p>Sortează după</p></option>
+                <option value="negru">Categorii</option>
+                <option value="alb">Branduri</option>
+                <option value="mov">Preț<ul></ul></option>
+                <option value="rosu">Mărime</option>
+                <option value="rosu">Culoare</option>
+            </select> 
+        </div>
+        <!-- PRODUCT MODEL -->
+        <div class="product-models">
+            <div class="product-model product-1">
+               <!-- De aici ajungi la product page -->
+                <a href="../product-page/index.html"><div class="product-image product-image-1">
+                    <img src="images/heart-icon.png" alt="">
+                    <h6 class="reduction">-30%</h6>
+                </div></a>
+                <h3>450.00 RON</h3>
+                <p class="p-purple">650.00 RON</p>
+                <h4>Nike Air Force 1 '07</h4>
+            </div>
+            <div class="product-model product-2">
+                <div class="product-image product-image-2">
+                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <h6 class="reduction">-30%</h6>
+                </div>
+                <h3>450.00 RON</h3>
+                <p class="p-purple">650.00 RON</p>
+                <h4>Nike Air Jordan 1 Zoom</h4>
+            </div>
+            <div class="product-model product-3">
+                <div class="product-image product-image-3">
+                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <h6 class="reduction">-20%</h6>
+                </div>
+                <h3>247.99 RON</h3>
+                <p class="p-purple">309.00 RON</p>
+                <h4>Vans Asher</h4>
+            </div>
+            <div class="product-model product-4">
+                <div class="product-image product-image-4">
+                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <h6 class="reduction">-30%</h6>
+                </div>
+                <h3>549.00 RON</h3>
+                <p class="p-purple">650.00 RON</p>
+                <h4>Adidas Originals Campus 00s</h4>
+            </div>
+            <div class="product-model product-5">
+                <div class="product-image product-image-5">
+                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <h6 class="reduction">-5%</h6>
+                </div>
+                <h3>750.00 RON</h3>
+                <p class="p-purple">800.00 RON</p>
+                <h4>Nike Air Jordan More UpTempo 96 NAS</h4>
+            </div>
+            <div class="product-model product-6">
+                <div class="product-image product-image-6">
+                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <h6 class="reduction">-30%</h6>
+                </div>
+                <h3>356.00 RON</h3>
+                <p class="p-purple">509.99 RON</p>
+                <h4>Adidas CENTENNIAL RM</h4>
+            </div>
+            <div class="product-model product-7">
+                <div class="product-image product-image-7">
+                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <h6 class="reduction">-30%</h6>
+                </div>
+                <h3>639.99 RON</h3>
+                <p class="p-purple">800.00 RON</p>
+                <h4>Nike Air Force 1 Low Retro QS</h4>
+            </div>
+            <div class="product-model product-8">
+                <div class="product-image product-image-8">
+                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <h6 class="reduction">-30%</h6>
+                </div>
+                <h3>639.99 RON</h3>
+                <p class="p-purple">799.00 RON</p>
+                <h4>Nike Air MAX 90</h4>
+            </div>
+            <div class="product-model product-1">
+                 <a href="../product-page/index.html"><div class="product-image product-image-1">
+                     <img src="images/heart-icon.png" alt="">
+                     <h6 class="reduction">-30%</h6>
+                 </div></a>
+                 <h3>450.00 RON</h3>
+                 <p class="p-purple">650.00 RON</p>
+                 <h4>Nike Air Force 1 '07</h4>
+             </div>
+             <div class="product-model product-2">
+                 <div class="product-image product-image-2">
+                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <h6 class="reduction">-30%</h6>
+                 </div>
+                 <h3>450.00 RON</h3>
+                 <p class="p-purple">650.00 RON</p>
+                 <h4>Nike Air Jordan 1 Zoom</h4>
+             </div>
+             <div class="product-model product-3">
+                 <div class="product-image product-image-3">
+                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <h6 class="reduction">-20%</h6>
+                 </div>
+                 <h3>247.99 RON</h3>
+                 <p class="p-purple">309.00 RON</p>
+                 <h4>Vans Asher</h4>
+             </div>
+             <div class="product-model product-4">
+                 <div class="product-image product-image-4">
+                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <h6 class="reduction">-30%</h6>
+                 </div>
+                 <h3>549.00 RON</h3>
+                 <p class="p-purple">650.00 RON</p>
+                 <h4>Adidas Originals Campus 00s</h4>
+             </div>
+             <div class="product-model product-5">
+                 <div class="product-image product-image-5">
+                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <h6 class="reduction">-5%</h6>
+                 </div>
+                 <h3>750.00 RON</h3>
+                 <p class="p-purple">800.00 RON</p>
+                 <h4>Nike Air Jordan More UpTempo 96 NAS</h4>
+             </div>
+             <div class="product-model product-6">
+                 <div class="product-image product-image-6">
+                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <h6 class="reduction">-30%</h6>
+                 </div>
+                 <h3>356.00 RON</h3>
+                 <p class="p-purple">509.99 RON</p>
+                 <h4>Adidas CENTENNIAL RM</h4>
+             </div>
+             <div class="product-model product-7">
+                 <div class="product-image product-image-7">
+                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <h6 class="reduction">-30%</h6>
+                 </div>
+                 <h3>639.99 RON</h3>
+                 <p class="p-purple">800.00 RON</p>
+                 <h4>Nike Air Force 1 Low Retro QS</h4>
+             </div>
+        </div>
+        <div class="catalog-page-switch">
+            <a href="#"><img src="../images/swipe-button-left.png" alt=""></a>
+            <h6>Pagina 1 din 30</h6>
+            <a href="#"><img src="../images/swipe-button-right.png" alt=""></a>
+        </div>
+         <!-- PRODUCT MODED -->
+   </section>
+    <section class="social-media-section">
+        <h2>NE POȚI GĂSII PE:</h2> 
+        <div class="social-media-links">
+            <a href="#"><img src="../images/facebook-button.png"></a>
+            <a href="#"><img src="../images/x-button.png"></a>
+            <a href="https://www.instagram.com/sneackers_heaven/" class="link1" target="_blank"><img src="../images/instagram-button-2.png"></a>
+            <a href="#"><img src="../images/tiktok-button.png"></a>
+            <a href="#"><img src="../images/youtube-button.png"></a>
+        </div>
+   </section>
+   <footer>
+    <h1>AJUTOR ȘI INFORMAȚII</h1>
+    <ul>
+        <li><a href="../contact-page/index.html" class="link1">Contact</a></li>
+        <li><a href="#" class="link1">Politică cookie-uri</a></li>
+        <li><a href="#" class="link1">Politică de confidentialitate</a></li>
+        <li><a href="#" class="link1">Termeni și condiții</a></li>
+        <li><a href="#" class="link1">Prelucrarea datelor cu caracter personal</a></li>   
+        <li><a href="#" class="link1">Protecția consumatorilor</a></li>
+        <li><a href="#" class="link1">Returnări</a></li>
+        <li><a href="#" class="link1">ANPC</a></li>
+    </ul>
+   </footer>
+   <script src="app.js"></script>
+</body>
+</body>
+</html>

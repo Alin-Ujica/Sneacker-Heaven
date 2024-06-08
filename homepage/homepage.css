@@ -171,9 +171,6 @@ a {
 
 
 
-
-
-
 /* Navigation */
 .hamburger {
     display: none;
@@ -220,17 +217,53 @@ nav .logo {
 }
 
 
+#mobile-nav {
+    display: none;
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+}
 
+#mobile-nav ul li {
+    padding: 10px 20px;
+}
 
+#mobile-nav .mobile-nav-categories {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    color: #8F57FB;
+    padding: 10px 40px;
+    font-size: 20px;
 
+}
 
+#mobile-search-bar {
+     background-color: #000;
+     height: 70px;
+     width: 100%;
+     position: relative;
+     display: flex;
+     justify-content: center;
+}
 
+#mobile-search-bar input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    height: 45px;
+    width: 370px;
+}
 
+#mobile-search-bar input:focus {
+    outline-style: none;
+   }
 
+   #mobile-search-bar #nav-exit-button {
+       position: relative;
+       top: 10px;
 
-
-
-
+   }
 
 /* PROMO */
 
@@ -279,6 +312,10 @@ nav .logo {
     width: 310px;
     height: 310px;
     position: relative;
+}
+
+.product-model .product-image:hover {
+  box-shadow: #00000060 2px 2px 5px;
 }
 
 .product-model .product-image-1 {
@@ -762,6 +799,7 @@ footer ul li {
  .social-media-section .social-media-links img {
     height: 70px;
  }
+
 }
 
 @media screen and (max-width:808px) {

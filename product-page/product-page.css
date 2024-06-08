@@ -1,0 +1,560 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    letter-spacing: -1px;
+}
+
+nav {
+    height: 85px;
+    width: 100%;
+    background-color: #000;
+    padding: 0px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-categories{
+    width:auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* UI KIT */
+h1 {
+    font-weight: bold; 
+    font-size: 40px;
+    color: #000;
+}
+
+h2 {
+    font-weight: semibold;
+    font-size:32px;
+    color: #fff;
+}
+
+h3 {
+    font-weight: bold;
+    font-size:30px;
+    color: #000;
+}
+
+h4 {
+    font-weight: semibold;
+    font-size:28px;
+    color: #000;
+}
+
+h5 {
+    font-weight: semibold;
+    font-size:24px;
+    color: #000;
+}
+
+.h5-purple {
+    color: #8F57FB;
+    font-size: 24px;
+    font-weight: semibold;
+}
+
+h6 {
+    font-weight: bold;
+    font-size:22px;
+    color: #000;
+}
+
+p {
+    font-size:20px;
+    color: #000;
+}
+
+.p-purple {
+    font-weight: semibold;
+    font-size:20px;
+    color: #5D11EF;
+}
+
+.btn-1 {
+    background-color: #8F57FB;
+    padding: 5px;
+    width: 150px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    border-radius:5px;
+    transition: background-color 200ms ease-in;
+}
+
+.btn-1:hover {
+    background-color: #5D11EF;
+}
+
+.btn-2 {
+    background-color: #C8ADFD;
+    border: 1px solid #C8ADFD;
+    color: #000;
+    padding: 5px;
+    width: 150px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    border-radius:5px;
+    transition: background-color 200ms ease-in;
+}
+
+.btn-2:hover {
+    background-color: hsla(260, 95%, 84%, 0.387);
+}
+
+.btn-3 {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #000;
+    padding: 5px;
+    width: 150px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    border-radius:5px;
+    transition: background-color 200ms ease-in;
+}
+
+.btn-3:hover {
+    background-color: hsla(0, 0%, 100%, 0.273);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.link1 {
+  text-decoration: none;
+  color: #000;
+}
+
+.link1:hover {
+    color: #8F57FB;
+    text-decoration: underline;
+}
+
+.link2 {
+    text-decoration: none;
+    color: #8F57FB;
+  }
+  
+.link2:hover {
+      color: #C8ADFD;
+      text-decoration: underline;
+  }
+
+.link3 {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+.link3:hover {
+      color: #000;
+      text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+/* Navigation */
+.hamburger {
+    display: none;
+}
+
+.hamburger img {
+    height: 23px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+nav .logo {
+    height: 70px;
+    overflow: hidden;
+}
+
+
+
+.nav-buttons input {
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    height: 23px;
+    margin-right: 15px;
+}
+
+.nav-buttons input:focus {
+ outline-style: none;
+}
+
+.nav-buttons img {
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-left: 15px;
+}
+
+.nav-buttons ::placeholder {
+    color: #000;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Product page section */
+
+.product-page-section {
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 0px 20px;
+}
+
+.product-page-section .product-page-images .big-image {
+    width: 640px;
+}
+
+.product-page-section .product-page-images .small-images {
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+
+
+.product-page-section .product-page-description h3.product-name::after{
+    content: "-30%";
+    position: relative;
+    left: 200px;
+    font-size:22px;
+    font-weight: bold;
+    background-color: #8F57FB;
+    border-radius: 10px;
+    padding: 3px 15px;
+}
+
+.product-page-section .product-page-description h1 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.product-page-section .product-page-description h1::after{
+    content: '650.00 RON';
+    font-size: 24px;
+    position: relative;
+    top: -5px;
+    left: 20px;
+    color: #8F57FB;
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+.product-page-section .product-page-description h4 {
+    margin-top: 25px;
+}
+
+.product-page-section .product-page-description .product-colors {
+    margin-top: 20px;
+    display: flex;
+    gap: 0px 20px;
+}
+
+.product-page-section .product-page-description .size-measures  {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.product-page-section .product-page-description .size-measures p {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #C8ADFD;
+    font-weight: 600;
+}
+
+
+
+.product-page-section .product-page-description select{
+background-color: #C8ADFD;
+padding: 7px 20px;
+border-radius: 5px;
+margin-top: 25px;
+font-size: 14px;
+font-weight: 600;
+padding-right: 170px;
+display: block;
+}
+
+
+.product-page-section .product-page-description .add-to-cart {
+  font-weight: bold;
+  font-size: 22px;
+  width: 200px;
+  padding: 10px 20px;
+  margin-top: 55px;
+  border-radius: 10px;
+  background-color: #C8ADFD;
+  display: inline-block;
+}
+
+.product-page-section .product-page-description .heart-icon-2 {
+    display: inline-block;
+    background-color: #C8ADFD;
+    padding: 14px; position: relative;
+    position: relative;
+    border-radius: 10px;
+    top: 15px;
+    left: 20px;
+}
+
+.product-page-section .product-page-description .product-details h6 {
+    margin-top: 25px;
+}
+
+.product-page-section .product-page-description .product-details h6::after {
+ content: url('../images/dropdown-arrow.png');
+ margin-left: 5px;
+}
+
+
+
+
+/*SOCIAL MEDIA*/
+.social-media-section {
+    background-color: #000;
+    background-image: url('../images/logo-no-writing.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 757px 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.social-media-section h2 {
+    z-index: 1;
+}
+
+.social-media-section .social-media-links {
+    display: flex;
+    gap: 0px 128px;
+    z-index: 1;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    height: 550px;
+    width: 100%;
+    background-color: #C8ADFD;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1600px) {
+    .product-page-section .product-page-description h3.product-name::after{
+        position: relative;
+        left: 50px;
+    }
+}
+
+
+@media screen and (max-width:1270px){
+    .social-media-section .social-media-links {
+        gap: 0px 70px;
+     }
+
+     .social-media-section .social-media-logo {
+        height: 400px;
+     }
+}
+
+@media screen and (max-width:1200px) {
+    .product-page-section .product-page-images .big-image {
+        height: 400px;
+        width: 400px;
+    }
+
+    .product-page-section .product-page-images .small-images {
+        width: 400px;
+    }
+
+    .product-page-section .product-page-images .small-image {
+        width: 120px;
+        height: 120px;
+    }
+} 
+
+@media screen and (max-width:930px) {
+    .product-page-section  {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .nav-categories {
+      display: none;
+    }
+  
+    nav .logo {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+      align-items: center;
+    }
+  
+    .hamburger .logo2 {
+      height: 70px;
+    }
+
+    .social-media-section .social-media-links {
+        gap: 0px 30px;
+        
+     }
+    
+     .social-media-section .social-media-links img {
+        height: 70px;
+     }
+}
+
+
+@media screen and (max-width:600px) {
+    
+    nav {
+        height: 85px;
+        width: 100%;
+        background-color: #000;
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .nav-buttons input {
+        display: none;
+    }
+
+    .nav-buttons img {
+        height: 30px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .social-media-section .social-media-links {
+        gap: 0px 20px;
+        
+     }
+    
+     .social-media-section .social-media-links img {
+        height: 50px;
+     }
+
+     footer {
+        height: 400px;
+     }
+
+     footer h1{
+        font-size: 26px;
+     }
+
+     footer ul li {
+        font-size: 20px;
+     }
+}
+
+@media screen and (max-width:450px) {
+    .product-page-section .product-page-images .small-images {
+        display: none;
+    }
+
+    .product-page-section .product-page-images .big-image {
+        width: 322px;
+        height: 322px;
+        margin-bottom: 25px;
+    }
+
+    .product-page-section .product-page-description h3 {
+        font-size: 20px;
+    }
+
+    .product-page-section .product-page-description h3::after {
+        font-size: 10px;
+    }
+
+    .product-page-section .product-page-description h1 {
+        font-size: 22px;
+    }
+
+    .product-page-section .product-page-description h1::after {
+        font-size: 16px;
+    } 
+}
+
+@media screen and (max-width:400px) {
+    .nav-buttons img {
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .hamburger .logo2 {
+        height: 60px;
+      }
+    }
