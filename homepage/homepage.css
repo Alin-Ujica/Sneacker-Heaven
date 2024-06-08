@@ -978,6 +978,8 @@ footer ul li {
         height: 400px;
       }
 
-
+      #mobile-search-bar input {
+        width: 280px;
+      }
 
 }
