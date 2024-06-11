@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="cart-page.css">
+</head>
+
+<body>
+    <nav>
+        <div class="hamburger">
+            <a href="#"><img src="../images/hamburger-menu.png" class="hamburger-btn"></a>
+            <a href="../index.html"><img src="../images/logo.png" class="logo2"></a>
+        </div>
+        <div class="nav-categories">
+            <ul>
+                <li><a href="../catalog-page/index.html" class="link1">
+                        <h5 class="h5-purple">Bărbați</h5>
+                    </a></li>
+                <li><a href="#" class="link1">
+                        <h5 class="h5-purple">Femei</h5>
+                    </a></li>
+                <li><a href="#" class="link1">
+                        <h5 class="h5-purple">Copii</h5>
+                    </a></li>
+            </ul>
+        </div>
+        <a href="../index.html"><img src="../images/logo.png" class="logo"></a>
+        <div class="nav-buttons">
+            <label for="search"><img src="../images/search-icon.png"></label>
+            <input type="text" placeholder="Search" name="search" id="search">
+            <a href="../login-page/index.html"><img src="../images/account-icon.png" alt="Account"></a>
+            <a href="#"><img src="../images/heart-icon.png" alt="Favorites"></a>
+            <a href="../cart-page-empty/index.html"><img src="../images/cart-icon.png" alt="Cart"></a>
+        </div>
+    </nav>
+    <section class="card-section">
+        <div class="progress-bar">
+            <div class="progress-bar-count">
+                <h2 class="purple-bg">1</h2>
+                <div class="line"></div>
+                <h2 class="purple-bg">2</h2>
+                <div class="line"></div>
+                <h2>3</h3>
+            </div>
+            <div class="progress-bar-text">
+                <h5>Coș de cumpărături</h5>
+                <h5>Plată și Transport</h5>
+                <h5>Rezumatul Comenzii</h5>
+            </div>
+        </div>
+        <h1>Coșul Tău</h1>
+        <div class="cart-items">
+            <img src="../images/product image.png">
+            <div class="cart-item-description">
+                <h4>Nike Air Force 1 '07</h4>
+                <p>Culoare: alb</p>
+                <p>Mărime: 40</p>
+            </div>
+            <div class="cart-item-ammount">
+                <h5>Cantitate</h5>
+                <div class="quantity-changer">
+                    <p>+</p>
+                    <h6>1</h6>
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="cart-item-price">
+                <h5>Preț</h5>
+                <h3>450.00 RON</h3>
+            </div>
+            <img src="../images/remove-item-icon.png" id="remove-item-icon">
+        </div>
+        <div class="cart-details">
+            <form action="#" enctype="multipart/form-data">
+                <label for="promo-code">Cod Promotional</label>
+                <input type="text" name="promo-code" id="promo-code" placeholder="Ex: 4223-5NRT-6INR-KEGX">
+                <button type="submit">Aplică</button>
+            </form>    
+            <h3 id="total-price">Subtotal: 450.00 RON</h3>
+        </div>
+        <div class="cart-page-change">
+            <a href="../catalog-page/index.html" class="link2">Înapoi la cumpărături</a>
+            <a href="#" class="btn-1">Pasul următor <img src="../images/next-icon.png"></a>
+        </div>
+    </section>
+    <section class="products">
+        <h1>Îți recomandăm și:</h1>
+        <!-- PRODUCT MODEL -->
+        <div class="product-models">
+            <div class="product-model product-1">
+                <!-- De aici ajungi la product page -->
+                <a href="../product-page/index.html">
+                    <div class="product-image product-image-1">
+                        <img src="images/heart-icon.png" alt="">
+                        <h6 class="reduction">-30%</h6>
+                    </div>
+                </a>
+                <h3>450.00 RON</h3>
+                <p class="p-purple">650.00 RON</p>
+                <h4>Nike Air Force 1 '07</h4>
+            </div>
+            <div class="product-model product-2">
+                <div class="product-image product-image-2">
+                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <h6 class="reduction">-30%</h6>
+                </div>
+                <h3>450.00 RON</h3>
+                <p class="p-purple">650.00 RON</p>
+                <h4>Nike Air Jordan 1 Zoom</h4>
+            </div>
+            <div class="product-model product-3">
+                <div class="product-image product-image-3">
+                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <h6 class="reduction">-20%</h6>
+                </div>
+                <h3>247.99 RON</h3>
+                <p class="p-purple">309.00 RON</p>
+                <h4>Vans Asher</h4>
+            </div>
+            <div class="product-model product-4">
+                <div class="product-image product-image-4">
+                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <h6 class="reduction">-30%</h6>
+                </div>
+                <h3>549.00 RON</h3>
+                <p class="p-purple">650.00 RON</p>
+                <h4>Adidas Originals Campus 00s</h4>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section class="social-media-section">
+        <h2>NE POȚI GĂSII PE:</h2>
+        <div class="social-media-links">
+            <a href="#"><img src="../images/facebook-button.png"></a>
+            <a href="#"><img src="../images/x-button.png"></a>
+            <a href="https://www.instagram.com/sneackers_heaven/" class="link1" target="_blank"><img
+                    src="../images/instagram-button-2.png"></a>
+            <a href="#"><img src="../images/tiktok-button.png"></a>
+            <a href="#"><img src="../images/youtube-button.png"></a>
+        </div>
+    </section>
+    <footer>
+        <h1>AJUTOR ȘI INFORMAȚII</h1>
+        <ul>
+            <li><a href="../contact-page/index.html" class="link1">Contact</a></li>
+            <li><a href="#" class="link1">Politică cookie-uri</a></li>
+            <li><a href="#" class="link1">Politică de confidentialitate</a></li>
+            <li><a href="#" class="link1">Termeni și condiții</a></li>
+            <li><a href="#" class="link1">Prelucrarea datelor cu caracter personal</a></li>
+            <li><a href="#" class="link1">Protecția consumatorilor</a></li>
+            <li><a href="#" class="link1">Returnări</a></li>
+            <li><a href="#" class="link1">ANPC</a></li>
+        </ul>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</body>
+
+</html>
