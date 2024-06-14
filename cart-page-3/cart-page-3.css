@@ -266,52 +266,39 @@ nav .logo {
     text-align: center;
 }
 
-
-
-.card-section form {
-    width: 95%;
+.cart-items {
+    width: 90%;
     display: flex;
-    gap: 20px 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #7F7E7E;
+    border-radius: 10px;
+    padding: 20px 0;
+    position: relative;
 }
 
-.card-section label {
-    font-size: 25px;
-    font-weight: bold;
+.cart-items img {
+    width: 150px;
 }
 
-.card-section input {
-    width: 480px;
-    border: 3px solid #5D11EF;
-    padding: 20px 10px;
-    margin-top: 5px;
-    border-radius: 20px;
-    display: block;
+.cart-items .quantity-changer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.card-section input::placeholder {
-    color: #5D11EF;
-    font-weight: bold;
+.cart-items .quantity-changer p {
+    font-size: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding:0 10px;
 }
 
-.card-section input:hover {
-    background-color: #00000013;
-}
-
-.card-section select {
-    width: 980px;
-    border: 3px solid #5D11EF;
-    padding: 20px 10px;
-    margin-top: 5px;
-    border-radius: 20px;
-    display: block;
+.cart-items .cart-item-price h3 {
+    color: #8F57FB;
 }
 
 
-.card-section button:hover {
-    background-color: #5D11EF;
-}
 
 .card-section .cart-page-change {
     width: 90%;
@@ -325,59 +312,36 @@ nav .logo {
     font-weight: bold;
 }
 
-.card-section .cart-page-change .btn-1 {
-    font-size: 25px;
-    width: 300px;
-    color:#fff;
-    padding: 20px 40px;
-}
-
-.card-section .cart-page-change img {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: 7px;
-    right: -20px;
-}
+.card-section .order-summary-details {
+    width: 85%;
+} 
 
 
-.card-section #delivery , .card-section #payment{
-    display: flex;
-    flex-direction: column;
-}
-
-.card-section #delivery {
-    margin-bottom: 50px;
-}
-
-
-
-.card-section input[type="radio"] {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-    position: relative;
-    top: 5px;
-    display: inline-block;
-}
-
-
-.card-section input[type="radio"]:checked {
-    background-color: #5D11EF;
-}
-
-.card-section #delivery ul ,.card-section #payment ul  {
-   margin-left: 50px;
-}
-
-.card-section #delivery ul li ,  .card-section #payment ul li{
-    font-size: 20px;
+.card-section .order-summary-details li {
+    font-size: 30px;
     font-weight: 600;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
-.card-section #delivery ul li span ,  .card-section #payment ul li span{
+.card-section .order-summary-details li span {
     color: #8F57FB;
+    margin-left: 25px;
+}
+
+.card-section .order-summary-details li::marker {
+    color: #8F57FB;
+}
+
+.card-section #total-price span {
+    color: #8F57FB;
+    margin-left: 10px;
+}
+
+.card-section a.btn-1 {
+    color:#fff;
+    font-size: 30px; 
+    width: 350px;
+    padding: 10px;
 }
 
 /* products */
@@ -603,14 +567,8 @@ footer ul li {
 @media screen and (max-width:1200px) {
 } 
 
-@media screen and (max-width:1020px) {
-    .card-section input {
-        width: 320px;
-    }
-
-    .card-section select {
-        width: 660px;
-    } 
+@media screen and (max-width:940px) {
+      
 }
 
 @media screen and (max-width:880px) {
@@ -652,16 +610,6 @@ footer ul li {
     }
 }
 
-@media screen and (max-width:685px) {
-    .card-section input {
-        width: 360px;
-    }
-
-    .card-section select {
-        width: 360px;
-    } 
-}
-
 @media screen and (max-width:650px) {
     .cart-items {
         width: 80%;
@@ -677,13 +625,9 @@ footer ul li {
         padding: 0px 0px 0px 10px;
     }
 
-    .card-section .cart-details input {
-        width: 340px;
-    }
 
     .card-section .cart-page-change {
         flex-direction: column;
-        gap: 20px;
     }
 
 
@@ -716,7 +660,7 @@ footer ul li {
         width: 40px;
     }
 
-    .card-section h1  ,.products h1{
+    .card-section h1 , .products h1{
         font-size: 30px;
     }
 

@@ -265,6 +265,31 @@ nav .logo {
 
    }
 
+   #mobile-nav .mobile-nav-categories .clothing::before {
+    content: url('../images/circle-image-1.png');
+    position: relative;
+    top: 5px;
+    right: 10px;
+   }
+
+   #mobile-nav .mobile-nav-categories .shoes::before {
+    content: url('../images/circle-image-2.png');
+    position: relative;
+    top: 5px;
+    right: 10px;
+   }
+
+   #mobile-nav .mobile-nav-categories .accesories::before {
+    content: url('../images/circle-image-3.png');
+    position: relative;
+    top: 5px;
+    right: 10px;
+   }
+
+   #mobile-nav .mobile-nav-categories a {
+        color: #8F57FB
+   }
+
 /* PROMO */
 
 #promo-img {
