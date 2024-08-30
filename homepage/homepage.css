@@ -30,6 +30,8 @@ nav {
 
 
 /* UI KIT */
+
+
 h1 {
     font-weight: bold; 
     font-size: 40px;
@@ -216,12 +218,43 @@ nav .logo {
     text-align: center;
 }
 
+#desktop-nav {
+    background-color: #000;
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 50px;
+    z-index: 2;
+}
+
+#desktop-nav img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+#desktop-nav h1 {
+    display: inline-block;
+    color: #8F57FB;
+}
+
+#desktop-nav li {
+    list-style: none;
+    margin-left: 55px;
+    color: #8F57FB;
+    font-size: 20px;
+}
+
 
 #mobile-nav {
     display: none;
     background-color: #000;
     position: absolute;
     width: 100%;
+    z-index: 2;
 }
 
 #mobile-nav ul li {
@@ -243,8 +276,9 @@ nav .logo {
      height: 70px;
      width: 100%;
      position: relative;
-     display: flex;
+     display: none;
      justify-content: center;
+     z-index: 2;
 }
 
 #mobile-search-bar input {
@@ -259,7 +293,7 @@ nav .logo {
     outline-style: none;
    }
 
-   #mobile-search-bar #nav-exit-button {
+   #mobile-search-bar #search-exit-button {
        position: relative;
        top: 10px;
 
@@ -291,28 +325,238 @@ nav .logo {
    }
 
 /* PROMO */
-
-#promo-img {
-    width: 100%;
-    height: 700px;
-    background-image: url('../images/promo-img2\ \(Medium\).jpg');
-    background-size: 1366px 768px;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
- #promo-img .btn-1 {
+.slider {
     position: relative;
-    top: 300px;
+    width: 100%;
+    max-width: 2000px;
+    max-height: 700px;
+    overflow: hidden;
+    background-color: #fff;
 }
 
+.slides {
+    display: flex;
+    transition: trasform 0.5s ease-in-out;
+}
 
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ddd;
+}
 
+.slide:last-child {
+    border-bottom: none;
+}
 
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+button.prev , button.next {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(143, 87, 251, 0.5);
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+
+button.prev p , button.next p  {
+ position: relative;
+ bottom: 14px;
+ right: 5px;
+ color: #fff;
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+.dots{
+    position: absolute;
+    bottom: 7px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.dot{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.dot.active {
+    background-color: rgb(143, 87, 251);
+    transform: scale(0.9);
+}
+
+.dot:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+}
+/* Chat Bot */
+#chat-bot-btn {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(143, 87, 251,0.7);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 70px;
+    right: 70px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#chat-notification{
+    font-size: 20px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 13px;
+    position: fixed;
+    display: none;
+    right: 60px;
+    bottom: 115px;
+    z-index: 4;
+}
+
+#chat-bot-btn p {
+    color: #000;
+    font-size: 30px;
+}
+
+#chat-bot-btn:hover {
+    background-color: rgba(143, 87, 251,1);
+}
+
+#chat-bot-container {
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    position: fixed;
+    display: none;
+    bottom: 80px;
+    right: 150px;
+    z-index: 3;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+#chat-bot-container h5 {
+    text-align: center;
+    background-color: #8F57FB;
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+}
+
+#chat-bot-conversation{
+    width: 100%;
+    height: 430px;
+    background-color: #fff;
+    overflow-y: scroll;
+    padding: 20px;
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+#chat-bot-conversation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#chat-bot-conversation li {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 270px;
+}
+
+#chat-bot-conversation  .bot-message{
+    align-self: flex-start;
+    background-color: #eee;
+    position: relative;
+    border-bottom-left-radius: 0px;
+    margin-left: 30px;
+}
+
+#chat-bot-conversation  .user-message{
+    align-self: flex-end;
+    background-color: #8F57FB;
+    border-bottom-right-radius: 0px;
+    color: #fff;
+}
+
+#chat-bot-conversation .waiting {
+    align-self: flex-end;
+    color: #727272;
+    font-size: 15px;
+}
+
+#chat-bot-conversation  .bot-message::before{
+    content: "";
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    background-image: url('../images/bot-img.png');
+    transform: scaleX(-1);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    position: absolute;
+    bottom: 0;
+    left: -45px;
+}
+
+#chat-bot-input{
+    width: 85%;
+    margin-left: 5px;
+    height: 45px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#chat-bot-input:focus {
+    outline-style: none;
+}
+
+#chat-bot-send-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #8F57FB;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#chat-bot-send-btn p {
+    position: relative;
+    bottom: 14px;
+    right: 5px;
+    color: #fff;
+}
 
 /* products section */
 
@@ -769,6 +1013,10 @@ footer ul li {
 }
 
 @media screen and (max-width:1024px) {
+    #desktop-nav h1 {
+        font-size: 30px;
+    }
+
     .insta-photos .insta-image-2 {
         display: none;
       }
@@ -824,7 +1072,10 @@ footer ul li {
  .social-media-section .social-media-links img {
     height: 70px;
  }
-
+ 
+ #desktop-nav {
+    display: none;
+ }
 }
 
 @media screen and (max-width:808px) {
@@ -870,6 +1121,11 @@ footer ul li {
 }
 
 @media screen and (max-width:650px) {
+
+    .dot{
+        height: 10px;
+        width: 10px;
+    }
     .product-models {
         gap: 0px 80px;
     }
@@ -1008,3 +1264,4 @@ footer ul li {
       }
 
 }
+
