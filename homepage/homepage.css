@@ -488,6 +488,8 @@ button.prev p , button.next p  {
     padding: 20px;
     border-radius: 10px;
     max-width: 270px;
+    word-wrap: break-word; 
+    white-space: normal;
 }
 
 #chat-bot-conversation  .bot-message{
@@ -503,6 +505,7 @@ button.prev p , button.next p  {
     background-color: #8F57FB;
     border-bottom-right-radius: 0px;
     color: #fff;
+    white-space: normal;
 }
 
 #chat-bot-conversation .waiting {
@@ -1201,6 +1204,26 @@ footer ul li {
     .nav-buttons img {
         height: 30px;
         margin-right: 20px;
+    }
+
+    #chat-bot-btn {
+        bottom: 40px;
+        right: 0px;
+    }
+
+    #chat-notification{
+        right: 0px;
+        bottom: 90px;
+    }
+
+    #chat-bot-container{
+        bottom: 120px;
+        right: 20px;
+        width: 380px;
+    }
+
+    #chat-bot-conversation li {
+        max-width: 240px;
     }
 }
 
