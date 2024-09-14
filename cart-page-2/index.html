@@ -19,26 +19,95 @@
         </div>
         <div class="nav-categories">
             <ul>
-                <li><a href="../catalog-page/index.html" class="link1">
+                <li class="desktop-nav-hovers"><a href="../catalog-page/index.html" class="link1">
                         <h5 class="h5-purple">Bărbați</h5>
                     </a></li>
-                <li><a href="#" class="link1">
+                <li class="desktop-nav-hovers"><a href="#" class="link1">
                         <h5 class="h5-purple">Femei</h5>
                     </a></li>
-                <li><a href="#" class="link1">
+                <li class="desktop-nav-hovers"><a href="#" class="link1">
                         <h5 class="h5-purple">Copii</h5>
                     </a></li>
             </ul>
         </div>
         <a href="../index.html"><img src="../images/logo.png" class="logo"></a>
         <div class="nav-buttons">
-            <label for="search"><img src="../images/search-icon.png"></label>
+            <label for="search"><img src="../images/search-icon.png" id="search-bar-icon"></label>
             <input type="text" placeholder="Search" name="search" id="search">
             <a href="../login-page/index.html"><img src="../images/account-icon.png" alt="Account"></a>
             <a href="#"><img src="../images/heart-icon.png" alt="Favorites"></a>
             <a href="../cart-page-empty/index.html"><img src="../images/cart-icon.png" alt="Cart"></a>
         </div>
     </nav>
+    <div id="desktop-nav">
+        <div class="desktop-nav-categories">
+            <img src="../images/circle-image-1.png">
+            <h1>Îmbrăcăminte</h1>
+            <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor </li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </div>
+        <div class="desktop-nav-categories">
+            <img src="../images/circle-image-2.png">
+            <h1>Încălțăminte</h1>
+            <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor </li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </div>
+        <div class="desktop-nav-categories">
+            <img src="../images/circle-image-3.png">
+            <h1>Accesorii</h1>
+            <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor </li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </div>
+    </div>
+    <div id="mobile-nav">
+        <ul>
+            <li class="nav-button"><a href="#" class="link1">
+                    <h5 class="h5-purple">Bărbați</h5>
+                </a></li>
+            <ul class="mobile-nav-categories">
+                <li class="clothing">Îmbrăcăminte</li>
+                <li class="shoes"><a href="catalog-page/index.html">Încălțăminte</a></li>
+                <li class="accesories">Accesorii</li>
+            </ul>
+            <li class="nav-button"><a href="#" class="link1">
+                    <h5 class="h5-purple">Femei</h5>
+                </a></li>
+            <ul class="mobile-nav-categories">
+                <li class="clothing">Îmbrăcăminte</li>
+                <li class="shoes"><a href="catalog-page/index.html">Încălțăminte</a></li>
+                <li class="accesories">Accesorii</li>
+            </ul>
+            <li class="nav-button"><a href="#" class="link1">
+                    <h5 class="h5-purple">Copii</h5>
+                </a></li>
+            <ul class="mobile-nav-categories">
+                <li class="clothing">Îmbrăcăminte</li>
+                <li class="shoes"><a href="catalog-page/index.html">Încălțăminte</a></li>
+                <li class="accesories">Accesorii</li>
+            </ul>
+        </ul>
+    </div>
+    <div id="mobile-search-bar">
+        <form action="#">
+            <input type="text" name="mobile-search" id="mobile-search" placeholder="Caută produsele tale">
+            <img src="../images/nav-exit-button.png" alt="" id="search-exit-button">
+        </form>
+    </div>
     <section class="card-section">
         <div class="progress-bar">
             <div class="progress-bar-count">
@@ -62,37 +131,73 @@
             <label for="phone">Telefon<input type="number" name="phone" id="phone"></label>
             <label for="judet">Județ<select name="judet" id="judet">
                 <option value="#">Județ</option>
-                <option value="alba">Alba</option>
-                <option value="harghita">Harghita</option>
+                <option value="Alba">Alba</option>
+                <option value="Arad">Arad</option>
+                <option value="Argeș">Argeș</option>
+                <option value="Bacău">Bacău</option>
+                <option value="Bihor">Bihor</option>
+                <option value="Bistrița-Năsăud">Bistrița-Năsăud</option>
+                <option value="Botoșani">Botoșani</option>
+                <option value="Brașov">Brașov</option>
+                <option value="Brăila">Brăila</option>
+                <option value="Buzău">Buzău</option>
+                <option value="Caraș-Severin">Caraș-Severin</option>
+                <option value="Călărași">Călărași</option>
+                <option value="Cluj">Cluj</option>
+                <option value="Constanța">Constanța</option>
+                <option value="Covasna">Covasna</option>
+                <option value="Dâmbovița">Dâmbovița</option>
+                <option value="Dolj">Dolj</option>
+                <option value="Galați">Galați</option>
+                <option value="Giurgiu">Giurgiu</option>
+                <option value="Gorj">Gorj</option>
+                <option value="Harghita">Harghita</option>
+                <option value="Hunedoara">Hunedoara</option>
+                <option value="Ialomița">Ialomița</option>
+                <option value="Iași">Iași</option>
+                <option value="Ilfov">Ilfov</option>
+                <option value="Maramureș">Maramureș</option>
+                <option value="Mehedinți">Mehedinți</option>
+                <option value="Mureș">Mureș</option>
+                <option value="Neamț">Neamț</option>
+                <option value="Olt">Olt</option>
+                <option value="Prahova">Prahova</option>
+                <option value="Satu Mare">Satu Mare</option>
+                <option value="Sălaj">Sălaj</option>
+                <option value="Sibiu">Sibiu</option>
+                <option value="Suceava">Suceava</option>
+                <option value="Teleorman">Teleorman</option>
+                <option value="Timiș">Timiș</option>
+                <option value="Tulcea">Tulcea</option>
+                <option value="Vaslui">Vaslui</option>
+                <option value="Vâlcea">Vâlcea</option>
+                <option value="Vrancea">Vrancea</option>
+                <option value="București">București</option>
             </select></label>
             <label for="city">Oraș<input type="text" name="city" id="city"></label>
-            <label for="street">Strada<input type="text" name="street" id="street"></label>
-            <label for="bloc">Bloc<input type="text" name="bloc" id="bloc"></label>
-            <label for="scara">Scară<input type="text" name="scara" id="scara"></label>
-            <label for="apartament">Apartament<input type="text" name="apartament" id="apartament"></label>
-            <label for="houseNumber">Nr. casă<input type="number" name="houseNumber" id="houseNumber"></label>
+            <label for="adress">Adresa<input type="text" name="street" id="adress"></label>
         </form>
         <h1>Metoda de livrare</h1>
         <form action="#" enctype="multipart/form-data" id="delivery">
-            <label for="adressDelivery"><input type="radio" name="Delivery" id="adressDelivery">Livrare la Adresă</label>
+            <label for="adressDelivery"><input type="radio" name="Delivery" id="adressDelivery" value="adressDelivery">Livrare la Adresă</label>
             <ul>
                 <li>Livrarea se face la adresa specificată de tine</li>
-                <li>Livrarea gratuită la comenzi de peste <span>300 RON</span></li>
+                <li>Livrarea gratuită la comenzi de peste <span>800 RON</span></li>
             </ul>
-            <label for="easyboxDelivery"><input type="radio" name="Delivery" id="easyboxDelivery">Livrare la Easybox</label>
+            <label for="easyboxDelivery"><input type="radio" name="Delivery" id="easyboxDelivery" value="easyboxDelivery">Livrare la Easybox</label>
             <ul>
                 <li><a href="#" class="link2">Alege Easybox</a></li>
-                <li>Livrarea gratuită la comenzi de peste <span>300 RON</span></li>
+                <li>Livrarea gratuită la comenzi de peste <span>800 RON</span></li>
             </ul>
         </form>
         <h1>Metoda de Plată</h1>
         <form action="#" enctype="multipart/form-data" id="payment">
-            <label for="cashPayment"><input type="radio" name="payment" id="cashPayment">Plata la livrare</label>
+            <label for="cashPayment"><input type="radio" name="payment" id="cashPayment" value="cashPayment">Plata la livrare</label>
             <ul>
                 <li>Dacă ai ales <span>”Livrare la adresă”</span>, plătești curierul la livrarea coletului</li>
                 <li>Dacă ai ales <span>“Livrare easybox”</span> , plătești cu cardul bancar la POS-UL lockerului selectat</li>
             </ul>
-            <label for="cardPayment"><input type="radio" name="payment"" id="cardPayment">Plata cu cardul</label>
+            <label for="cardPayment"><input type="radio" name="payment" id="cardPayment" value="cardPayment">Plata cu cardul</label>
             <ul>
                 <li><img src="../images/payment.png" style="width: 120px;"></li>
                 <li>Plătește online cu cardul simplu și rapid</li>
@@ -100,7 +205,7 @@
         </form>
         <div class="cart-page-change">
             <a href="../cart-page-1/index.html" class="link2">Înapoi</a>
-            <a href="../cart-page-3/index.html" class="btn-1">Pasul următor <img src="../images/next-icon.png"></a>
+            <a href="#" class="btn-1" id="next-step-btn">Pasul următor <img src="../images/next-icon.png"></a>
         </div>
     </section>
     <section class="products">
@@ -111,7 +216,7 @@
                 <!-- De aici ajungi la product page -->
                 <a href="../product-page/index.html">
                     <div class="product-image product-image-1">
-                        <img src="images/heart-icon.png" alt="">
+                        <img src="../images/heart-icon.png" alt="">
                         <h6 class="reduction">-30%</h6>
                     </div>
                 </a>
@@ -121,7 +226,7 @@
             </div>
             <div class="product-model product-2">
                 <div class="product-image product-image-2">
-                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
                 <h3>450.00 RON</h3>
@@ -130,7 +235,7 @@
             </div>
             <div class="product-model product-3">
                 <div class="product-image product-image-3">
-                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-20%</h6>
                 </div>
                 <h3>247.99 RON</h3>
@@ -139,7 +244,7 @@
             </div>
             <div class="product-model product-4">
                 <div class="product-image product-image-4">
-                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
                 <h3>549.00 RON</h3>
@@ -174,6 +279,7 @@
         </ul>
     </footer>
     <script src="../app.js"></script>
+    <script src="cart-page-2.js"></script>
 </body>
 </body>
 

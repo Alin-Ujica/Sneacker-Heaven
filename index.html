@@ -37,9 +37,16 @@
             <input type="text" placeholder="Search" name="search" id="search">
             <a href="login-page/index.html"><img src="images/account-icon.png" alt="Account"></a>
             <a href="#"><img src="images/heart-icon.png" alt="Favorites"></a>
-            <a href="cart-page-empty/index.html"><img src="images/cart-icon.png" alt="Cart"></a>
+            <a href="cart-page-1/index.html" id="nav-cart-icon"><img src="images/cart-icon.png" alt="Cart"></a>
+            <p id="cart-counter">0</p>
+            <div id="nav-cart">
+                <div id="nav-cart-items">
+                </div>
+                <p id="nav-cart-total">Total:<span id="nav-cart-total-price">0</span>RON</p>
+            </div>
         </div>
     </nav>
+    <div id="nav-bg-effect"></div>
     <div id="desktop-nav">
         <div class="desktop-nav-categories">
             <img src="images/circle-image-1.png">
@@ -115,23 +122,28 @@
                 <img src="https://cdn.pixabay.com/photo/2020/05/03/19/09/nike-5126389_1280.jpg" alt="image 1">
             </div>
             <div class="slide">
-                <img src="https://images.pexels.com/photos/250356/pexels-photo-250356.jpeg"
-                    alt="image 2">
+                <img src="https://images.pexels.com/photos/250356/pexels-photo-250356.jpeg" alt="image 2">
             </div>
             <div class="slide">
                 <img src="https://images.pexels.com/photos/812871/pexels-photo-812871.jpeg" alt="image 3">
             </div>
         </div>
-        <button class="prev" onclick="prevSlide()"><p>&#10094</p></button>
-        <button class="next" onclick="nextSlide()"><p>&#10095</p></button>
+        <button class="prev" onclick="prevSlide()">
+            <p>&#10094</p>
+        </button>
+        <button class="next" onclick="nextSlide()">
+            <p>&#10095</p>
+        </button>
         <div class="dots">
             <div class="dot" onclick="dotSlide(0)"></div>
             <div class="dot" onclick="dotSlide(1)"></div>
             <div class="dot" onclick="dotSlide(2)"></div>
         </div>
     </div>
-    <div id="chat-bot">  
-        <button id="chat-bot-btn"><p>&#9993</p></button>
+    <div id="chat-bot">
+        <button id="chat-bot-btn">
+            <p>&#9993</p>
+        </button>
         <p id="chat-notification">1</p>
         <div id="chat-bot-container">
             <h5>SneackerBOT</h5>
@@ -142,7 +154,9 @@
                 </ul>
             </div>
             <input type="text" id="chat-bot-input" autocomplete="off" placeholder="Type:">
-            <button id="chat-bot-send-btn"><p>&#10095</p></button>
+            <button id="chat-bot-send-btn">
+                <p>&#10095</p>
+            </button>
         </div>
     </div>
     </div>
@@ -154,77 +168,92 @@
         <!-- PRODUCT MODEL -->
         <div class="product-models">
             <div class="product-model product-1">
-                <!-- De aici ajungi la product page -->
-                <a href="product-page/index.html">
-                    <div class="product-image product-image-1">
-                        <img src="images/heart-icon.png" alt="">
+                <!-- <a href="product-page/index.html" class="product-link"> -->
+                    <div class="product-image">
+                        <img src="images/product image.png" class="product-img">
+                        <img src="images/heart-icon.png">
                         <h6 class="reduction">-30%</h6>
                     </div>
                 </a>
-                <h3>450.00 RON</h3>
+                <img src="images/cart-icon.png" class="product-cart-icon">
+                <h3><span>450.00</span> RON</h3>
                 <p class="p-purple">650.00 RON</p>
                 <h4>Nike Air Force 1 '07</h4>
             </div>
             <div class="product-model product-2">
-                <div class="product-image product-image-2">
+                <div class="product-image">
+                    <img src="images/product-image-2.png" class="product-img">
                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
-                <h3>450.00 RON</h3>
+                <img src="images/cart-icon.png" class="product-cart-icon">
+                <h3><span>460.00</span> RON</h3>
                 <p class="p-purple">650.00 RON</p>
                 <h4>Nike Air Jordan 1 Zoom</h4>
             </div>
             <div class="product-model product-3">
-                <div class="product-image product-image-3">
+                <div class="product-image">
+                    <img src="images/product-image-3.png" class="product-img">
                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-20%</h6>
                 </div>
-                <h3>247.99 RON</h3>
+                <img src="images/cart-icon.png" class="product-cart-icon">
+                <h3><span>247.99</span> RON</h3>
                 <p class="p-purple">309.00 RON</p>
                 <h4>Vans Asher</h4>
             </div>
-            <div class="product-model product-4">
+            <div class="product-model">
                 <div class="product-image product-image-4">
+                    <img src="images/product-image-4.png" class="product-img">
                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
-                <h3>549.00 RON</h3>
+                <img src="images/cart-icon.png" class="product-cart-icon">
+                <h3><span>549.00</span> RON</h3>
                 <p class="p-purple">650.00 RON</p>
                 <h4>Adidas Originals Campus 00s</h4>
             </div>
             <div class="product-model product-5">
-                <div class="product-image product-image-5">
+                <div class="product-image">
+                    <img src="images/product-image-5.png" class="product-img">
                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-5%</h6>
                 </div>
-                <h3>750.00 RON</h3>
+                <img src="images/cart-icon.png" class="product-cart-icon">
+                <h3><span>750.00</span> RON</h3>
                 <p class="p-purple">800.00 RON</p>
                 <h4>Nike Air Jordan More UpTempo 96 NAS</h4>
             </div>
             <div class="product-model product-6">
-                <div class="product-image product-image-6">
+                <div class="product-image">
+                    <img src="images/product-image-6.png" class="product-img">
                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
-                <h3>356.00 RON</h3>
+                <img src="images/cart-icon.png" class="product-cart-icon">
+                <h3><span>356.00</span> RON</h3>
                 <p class="p-purple">509.99 RON</p>
                 <h4>Adidas CENTENNIAL RM</h4>
             </div>
             <div class="product-model product-7">
-                <div class="product-image product-image-7">
+                <div class="product-image">
+                    <img src="images/product-image-7.png" class="product-img">
                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
-                <h3>639.99 RON</h3>
+                <img src="images/cart-icon.png" class="product-cart-icon">
+                <h3><span>639.99</span> RON</h3>
                 <p class="p-purple">800.00 RON</p>
                 <h4>Nike Air Force 1 Low Retro QS</h4>
             </div>
             <div class="product-model product-8">
-                <div class="product-image product-image-8">
+                <div class="product-image">
+                    <img src="images/product-image-8.png" class="product-img">
                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
-                <h3>639.99 RON</h3>
+                <img src="images/cart-icon.png" class="product-cart-icon">
+                <h3><span>639.99</span> RON</h3>
                 <p class="p-purple">799.00 RON</p>
                 <h4>Nike Air MAX 90</h4>
             </div>
@@ -275,34 +304,44 @@
         <div class="products">
             <div class="product-models">
                 <div class="product-model product-1">
-                    <div class="product-image product-image-1">
+                    <div class="product-image">
+                        <img src="images/product image.png" class="product-img">
                         <a href="#"><img src="images/heart-icon.png" alt=""></a>
                         <h6 class="reduction">-30%</h6>
                     </div>
-                    <h3>450.00 RON</h3>
+                    <img src="images/cart-icon.png" class="product-cart-icon">
+                    <h3><span>450.00</span>  RON</h3>
                     <p class="p-purple">650.00 RON</p>
                     <h4>Nike Air Force 1 '07</h4>
                 </div>
                 <div class="product-model product-2">
-                    <div class="product-image product-image-9">
+                    <div class="product-image">
+                        <img src="images/product-image-9.png" class="product-img">
                         <a href="#"><img src="images/heart-icon.png" alt=""></a>
                     </div>
-                    <h3>699.99 RON</h3>
+                    <img src="images/cart-icon.png" class="product-cart-icon">
+                    <h3><span>699.99</span>  RON</h3>
+                    <p class="p-purple"></p>
                     <h4>Nike Air Force 1 Low SE </h4>
                 </div>
                 <div class="product-model product-3">
-                    <div class="product-image product-image-10">
+                    <div class="product-image">
+                        <img src="images/product-image-10.png" class="product-img">
                         <a href="#"><img src="images/heart-icon.png" alt=""></a>
                     </div>
-                    <h3>709.99 RON</h3>
+                    <img src="images/cart-icon.png" class="product-cart-icon">
+                    <h3><span>709.99</span>  RON</h3>
+                    <p class="p-purple"></p>
                     <h4>Nike Air Force Low Black</h4>
                 </div>
                 <div class="product-model product-4">
-                    <div class="product-image product-image-11">
+                    <div class="product-image">
+                        <img src="images/product-image-11.png" class="product-img">
                         <a href="#"><img src="images/heart-icon.png" alt=""></a>
                         <h6 class="reduction">-30%</h6>
                     </div>
-                    <h3>450.00 RON</h3>
+                    <img src="images/cart-icon.png" class="product-cart-icon">
+                    <h3><span>450.00</span> RON</h3>
                     <p class="p-purple">650.00 RON</p>
                     <h4>Nike Air Jordan 1 ZM AIR CMFT 2</h4>
                 </div>
@@ -353,6 +392,7 @@
         </ul>
     </footer>
     <script src="app.js"></script>
+    <script src="homepage/homepage.js"></script>
 </body>
 
 </html>

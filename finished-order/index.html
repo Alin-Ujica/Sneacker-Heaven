@@ -12,29 +12,104 @@
 <body>
     <nav>
         <div class="hamburger">
-           <a href="#"><img src="../images/hamburger-menu.png" class="hamburger-btn"></a>
-        <a href="../index.html"><img src="../images/logo.png" class="logo2"></a>
+            <a href="#"><img src="../images/hamburger-menu.png" class="hamburger-btn"></a>
+            <a href="../index.html"><img src="../images/logo.png" class="logo2"></a>
         </div>
-         <div class="nav-categories">
+        <div class="nav-categories">
             <ul>
-                <li><a href="../catalog-page/index.html" class="link1"><h5 class="h5-purple">Bărbați</h5></a></li>
-                <li><a href="#" class="link1"><h5 class="h5-purple">Femei</h5></a></li>
-                <li><a href="#" class="link1"><h5 class="h5-purple">Copii</h5></a></li>
+                <li class="desktop-nav-hovers"><a href="../catalog-page/index.html" class="link1">
+                        <h5 class="h5-purple">Bărbați</h5>
+                    </a></li>
+                <li class="desktop-nav-hovers"><a href="#" class="link1">
+                        <h5 class="h5-purple">Femei</h5>
+                    </a></li>
+                <li class="desktop-nav-hovers"><a href="#" class="link1">
+                        <h5 class="h5-purple">Copii</h5>
+                    </a></li>
             </ul>
-         </div>
-         <a href="../index.html"><img src="../images/logo.png" class="logo"></a>
-         <div class="nav-buttons">
-            <label for="search"><img src="../images/search-icon.png"></label>
+        </div>
+        <a href="../index.html"><img src="../images/logo.png" class="logo"></a>
+        <div class="nav-buttons">
+            <label for="search"><img src="../images/search-icon.png" id="search-bar-icon"></label>
             <input type="text" placeholder="Search" name="search" id="search">
             <a href="../login-page/index.html"><img src="../images/account-icon.png" alt="Account"></a>
             <a href="#"><img src="../images/heart-icon.png" alt="Favorites"></a>
-            <a href="index.html"><img src="../images/cart-icon.png" alt="Cart"></a>
+            <a href="../cart-page-empty/index.html"><img src="../images/cart-icon.png" alt="Cart"></a>
         </div>
     </nav>
+    <div id="desktop-nav">
+        <div class="desktop-nav-categories">
+            <img src="../images/circle-image-1.png">
+            <h1>Îmbrăcăminte</h1>
+            <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor </li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </div>
+        <div class="desktop-nav-categories">
+            <img src="../images/circle-image-2.png">
+            <h1>Încălțăminte</h1>
+            <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor </li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </div>
+        <div class="desktop-nav-categories">
+            <img src="../images/circle-image-3.png">
+            <h1>Accesorii</h1>
+            <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor </li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </div>
+    </div>
+    <div id="mobile-nav">
+        <ul>
+            <li class="nav-button"><a href="#" class="link1">
+                    <h5 class="h5-purple">Bărbați</h5>
+                </a></li>
+            <ul class="mobile-nav-categories">
+                <li class="clothing">Îmbrăcăminte</li>
+                <li class="shoes"><a href="catalog-page/index.html">Încălțăminte</a></li>
+                <li class="accesories">Accesorii</li>
+            </ul>
+            <li class="nav-button"><a href="#" class="link1">
+                    <h5 class="h5-purple">Femei</h5>
+                </a></li>
+            <ul class="mobile-nav-categories">
+                <li class="clothing">Îmbrăcăminte</li>
+                <li class="shoes"><a href="catalog-page/index.html">Încălțăminte</a></li>
+                <li class="accesories">Accesorii</li>
+            </ul>
+            <li class="nav-button"><a href="#" class="link1">
+                    <h5 class="h5-purple">Copii</h5>
+                </a></li>
+            <ul class="mobile-nav-categories">
+                <li class="clothing">Îmbrăcăminte</li>
+                <li class="shoes"><a href="catalog-page/index.html">Încălțăminte</a></li>
+                <li class="accesories">Accesorii</li>
+            </ul>
+        </ul>
+    </div>
+    <div id="mobile-search-bar">
+        <form action="#">
+            <input type="text" name="mobile-search" id="mobile-search" placeholder="Caută produsele tale">
+            <img src="../images/nav-exit-button.png" alt="" id="search-exit-button">
+        </form>
+    </div>
     <section class="card-section">
         <h1>Îți mulțumim pentru comandă!</h1>
         <a href="../cart-page-1/index.html"><img src="../images/finished-order.png">     
-        <a href="../catalog-page/index.html" class="btn-1">Înapoi la cumpărături</a>
+        <a href="../index.html" class="btn-1">Înapoi la cumpărături</a>
     </section>
     <section class="social-media-section">
         <h2>NE POȚI GĂSII PE:</h2> 

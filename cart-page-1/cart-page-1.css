@@ -205,7 +205,7 @@ nav .logo {
 }
 
 .nav-buttons img {
-    height: 20px;
+    height: 25px;
     position: relative;
     top: 5px;
     margin-left: 15px;
@@ -215,9 +215,115 @@ nav .logo {
     color: #000;
     text-align: center;
 }
+
+#desktop-nav {
+    background-color: #000;
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 50px;
+    z-index: 2;
+}
+
+#desktop-nav img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+#desktop-nav h1 {
+    display: inline-block;
+    color: #8F57FB;
+}
+
+#desktop-nav li {
+    list-style: none;
+    margin-left: 55px;
+    color: #8F57FB;
+    font-size: 20px;
+}
+
+
+#mobile-nav {
+    display: none;
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+#mobile-nav ul li {
+    padding: 10px 20px;
+}
+
+#mobile-nav .mobile-nav-categories {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    color: #8F57FB;
+    padding: 10px 40px;
+    font-size: 20px;
+
+}
+
+#mobile-search-bar {
+     background-color: #000;
+     height: 70px;
+     width: 100%;
+     position: relative;
+     display: none;
+     justify-content: center;
+     z-index: 2;
+}
+
+#mobile-search-bar input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    height: 45px;
+    width: 370px;
+}
+
+#mobile-search-bar input:focus {
+    outline-style: none;
+   }
+
+   #mobile-search-bar #search-exit-button {
+       position: relative;
+       top: 10px;
+
+   }
+
+   #mobile-nav .mobile-nav-categories .clothing::before {
+    content: url('../images/circle-image-1.png');
+    position: relative;
+    top: 5px;
+    right: 10px;
+   }
+
+   #mobile-nav .mobile-nav-categories .shoes::before {
+    content: url('../images/circle-image-2.png');
+    position: relative;
+    top: 5px;
+    right: 10px;
+   }
+
+   #mobile-nav .mobile-nav-categories .accesories::before {
+    content: url('../images/circle-image-3.png');
+    position: relative;
+    top: 5px;
+    right: 10px;
+   }
+
+   #mobile-nav .mobile-nav-categories a {
+        color: #8F57FB
+   }
 /* Cart Page */
 
-.card-section {
+.cart-section {
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -226,7 +332,7 @@ nav .logo {
  gap: 50px 0;
 }
 
-.card-section img {
+.cart-section img {
     width: 200px;
 }
 
@@ -266,7 +372,17 @@ nav .logo {
     text-align: center;
 }
 
-.cart-items {
+#cart-items {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+}
+
+.cart-item {
     width: 90%;
     display: flex;
     justify-content: space-evenly;
@@ -277,46 +393,51 @@ nav .logo {
     position: relative;
 }
 
-.cart-items img {
+.cart-item img {
     width: 150px;
 }
 
-.cart-items .quantity-changer {
+.cart-item .cart-item-name {
+    max-width: 300px;
+}
+
+.cart-item .quantity-changer {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.cart-items .quantity-changer p {
+.cart-item .quantity-changer p {
     font-size: 30px;
     border: 1px solid #000;
     border-radius: 50%;
     padding:0 10px;
 }
 
-.cart-items .cart-item-price h3 {
+.cart-item .cart-item-price h3 {
     color: #8F57FB;
 }
 
 
-.cart-items #remove-item-icon {
+.cart-item .remove-item-icon {
     width: 35px;
     position: absolute;
     right: 30px;
     top: 30px;
+    cursor: pointer;
 }
 
-.card-section .cart-details {
+.cart-section .cart-details {
     align-self: start;
     padding: 0 50px;
 }
 
-.card-section .cart-details label {
+.cart-section .cart-details label {
     font-size: 20px;
     font-weight: bold;
 }
 
-.card-section .cart-details input {
+.cart-section .cart-details input {
     width: 480px;
     border: 3px solid #5D11EF;
     padding: 20px 10px;
@@ -325,16 +446,16 @@ nav .logo {
     display: block;
 }
 
-.card-section .cart-details input::placeholder {
+.cart-section .cart-details input::placeholder {
     color: #5D11EF;
     font-weight: bold;
 }
 
-.card-section .cart-details input:hover {
+.cart-section .cart-details input:hover {
     background-color: #00000013;
 }
 
-.card-section .cart-details button {
+.cart-section .cart-details button {
     display: block;
     width: 240px;
     padding: 10px 10px;
@@ -348,30 +469,30 @@ nav .logo {
     font-weight: bold;
 }
 
-.card-section .cart-details button:hover {
+.cart-section .cart-details button:hover {
     background-color: #5D11EF;
 }
 
-.card-section .cart-page-change {
+.cart-section .cart-page-change {
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.card-section .cart-page-change .link2 {
+.cart-section .cart-page-change .link2 {
     font-size: 25px;
     font-weight: bold;
 }
 
-.card-section .cart-page-change .btn-1 {
+.cart-section .cart-page-change .btn-1 {
     font-size: 25px;
     width: 300px;
     color:#fff;
     padding: 20px 40px;
 }
 
-.card-section .cart-page-change img {
+.cart-section .cart-page-change img {
     width: 20px;
     height: 20px;
     position: relative;
@@ -379,7 +500,9 @@ nav .logo {
     right: -20px;
 }
 
-
+.increase-btn , .decrease-btn {
+    cursor: pointer;
+}
 
 
 /* products */
@@ -431,7 +554,8 @@ nav .logo {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0px 20px;
+    gap: 0px 10px;
+    margin: 20px;
  }
 
 .product-image img {
@@ -636,7 +760,7 @@ footer ul li {
         height: 70px;
      }
 
-     .cart-items {
+     .cart-item {
         flex-wrap: wrap;
         gap: 30px;
     }
@@ -649,25 +773,25 @@ footer ul li {
 }
 
 @media screen and (max-width:650px) {
-    .cart-items {
+    .cart-item {
         width: 80%;
         flex-direction: column;
         gap: 20px;
     }
 
-    .cart-items .cart-item-description p {
+    .cart-item .cart-item-description p {
         display: none;
     }
 
-    .card-section .cart-details {
+    .cart-section .cart-details {
         padding: 0px 0px 0px 10px;
     }
 
-    .card-section .cart-details input {
+    .cart-section .cart-details input {
         width: 340px;
     }
 
-    .card-section .cart-page-change {
+    .cart-section .cart-page-change {
         flex-direction: column;
         gap: 20px;
     }
@@ -702,7 +826,7 @@ footer ul li {
         width: 40px;
     }
 
-    .card-section h1 , .products h1{
+    .cart-section h1 , .products h1{
         font-size: 30px;
     }
 

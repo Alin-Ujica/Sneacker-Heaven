@@ -6,26 +6,10 @@
     letter-spacing: -1px;
 }
 
-nav {
-    height: 85px;
-    width: 100%;
-    background-color: #000;
-    padding: 0px 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .nav-categories{
     width:auto;
 }
-
-
-
-
-
-
-
 
 
 
@@ -174,6 +158,19 @@ a {
 
 
 /* Navigation */
+
+nav {
+    height: 85px;
+    width: 100%;
+    background-color: #000;
+    padding: 0px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+}
+
 .hamburger {
     display: none;
 }
@@ -191,8 +188,9 @@ nav .logo {
     height: 70px;
     overflow: hidden;
 }
-
-
+.nav-buttons{
+    position: relative;
+}
 
 .nav-buttons input {
     border: none;
@@ -200,6 +198,8 @@ nav .logo {
     padding: 5px;
     height: 23px;
     margin-right: 15px;
+    position: relative;
+    bottom: 3px;
 }
 
 .nav-buttons input:focus {
@@ -207,7 +207,7 @@ nav .logo {
 }
 
 .nav-buttons img {
-    height: 20px;
+    height: 25px;
     position: relative;
     top: 5px;
     margin-left: 15px;
@@ -221,7 +221,8 @@ nav .logo {
 #desktop-nav {
     background-color: #000;
     height: 300px;
-    position: absolute;
+    position: fixed;
+    top: 70px;
     width: 100%;
     display: none;
     justify-content: center;
@@ -252,7 +253,8 @@ nav .logo {
 #mobile-nav {
     display: none;
     background-color: #000;
-    position: absolute;
+    position: fixed;
+    top: 80px;
     width: 100%;
     z-index: 2;
 }
@@ -275,7 +277,8 @@ nav .logo {
      background-color: #000;
      height: 70px;
      width: 100%;
-     position: relative;
+     position: fixed;
+     top: 80px;
      display: none;
      justify-content: center;
      z-index: 2;
@@ -324,6 +327,14 @@ nav .logo {
         color: #8F57FB
    }
 
+   #nav-bg-effect {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: none;
+   }
 /* PROMO */
 .slider {
     position: relative;
@@ -353,6 +364,8 @@ nav .logo {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    top: 40px;
 }
 
 button.prev , button.next {
@@ -560,6 +573,81 @@ button.prev p , button.next p  {
     right: 5px;
     color: #fff;
 }
+/* CART */
+nav #cart-counter {
+    color: #000;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    background-color:#fff ;
+    width: 30px;
+    height: 30px;
+    padding: 3px 5px;
+    border-radius: 50%;
+    text-align: center;
+}
+#nav-cart {
+    display: none;
+    width: 350px;
+    height: 300px;
+    max-height: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    border-radius: 10px 0 10px 10px;
+    border: 2px solid #8F57FB;
+}
+
+#nav-cart-items {
+    overflow-y: scroll;
+    width: 345px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-cart-item{
+    position: relative;
+    border-bottom: 1px solid #9c9c9c;
+    padding-bottom: 5px;
+}
+
+.nav-cart-item h5 {
+    position: absolute;
+    bottom: 10px;
+    left: 110px;
+    color: #8F57FB;
+}
+
+.nav-cart-item h4 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 45px;
+    left: 110px;
+    word-wrap: break-word; 
+    white-space: normal;
+    max-width: 160px;
+}
+
+.nav-cart-item p {
+    position: absolute;
+    bottom: 30px;
+    left: 290px;
+}
+
+.nav-cart-item-img {
+    width: 80px;
+    height: 80px !important;
+}
+
+#nav-cart-total {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #9c9c9c;
+}
 
 /* products section */
 
@@ -578,6 +666,7 @@ button.prev p , button.next p  {
 .product-model{
   margin-top: 25px;
   width: 310px;
+  position: relative;
 }
 
  .product-model .product-image {
@@ -590,38 +679,11 @@ button.prev p , button.next p  {
   box-shadow: #00000060 2px 2px 5px;
 }
 
-.product-model .product-image-1 {
-    background-image: url('../images/product\ image.png');
-}
-.product-model .product-image-2 {
-    background-image: url('../images/product-image-2.png');
-}
-.product-model .product-image-3 {
-    background-image: url('../images/product-image-3.png');
-}
-.product-model .product-image-4 {
-    background-image: url('../images/product-image-4.png');
-}
-.product-model .product-image-5 {
-    background-image: url('../images/product-image-5.png');
-}
-.product-model .product-image-6 {
-    background-image: url('../images/product-image-6.png');
-}
-.product-model .product-image-7 {
-    background-image: url('../images/product-image-7.png');
-}
-.product-model .product-image-8 {
-    background-image: url('../images/product-image-8.png');
-}
-.product-model .product-image-9 {
-    background-image: url('../images/product-image-9.png');
-}
-.product-model .product-image-10 {
-    background-image: url('../images/product-image-10.png');
-}
-.product-model .product-image-11 {
-    background-image: url('../images/product-image-11.png');
+
+.product-model .product-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .product-models {
@@ -635,6 +697,13 @@ button.prev p , button.next p  {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+.product-model .product-cart-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
 }
 
 .product-model .reduction {
@@ -668,17 +737,6 @@ button.prev p , button.next p  {
 margin-top: 15px;
 font-weight: 600;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* BRANDS */
@@ -763,9 +821,6 @@ section.brands {
 .sneacker-of-the-week .product-models .product1,.sneacker-of-the-week .product-models .product2 {
     margin-top: 0px;
 }
-
-
-
 
 
 /* INSTA PROMO */
@@ -929,11 +984,10 @@ footer ul li {
     .sneacker-of-the-week .products {
         justify-content: space-evenly;
     }
-   
+
     .sneacker-of-the-week .product-image {
         width: 170px;
         height: 170px;
-        background-size:170px 170px;
     }
 
     .sneacker-of-the-week .product-model{
@@ -941,10 +995,12 @@ footer ul li {
         width: 170px;
       }
 
-      .sneacker-of-the-week .product-image img {
+      .sneacker-of-the-week .product-image .product-img {
+        width: 170px;
+        height: 170px;
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 0px;
+        right: 0px;
     }
 
     .sneacker-of-the-week .product-model .reduction {
@@ -1139,6 +1195,12 @@ footer ul li {
         background-size:170px 170px;
     }
 
+    .product-model .product-img {
+        width: 170px;
+        height: 170px;
+        background-size:170px 170px;
+    }
+
     .product-model{
         margin-top: 25px;
         width: 170px;
@@ -1206,6 +1268,12 @@ footer ul li {
         margin-right: 20px;
     }
 
+    nav #cart-counter {
+        position: absolute;
+        right: 5px;
+        top: 25px;
+    }
+
     #chat-bot-btn {
         bottom: 40px;
         right: 0px;
@@ -1219,7 +1287,7 @@ footer ul li {
     #chat-bot-container{
         bottom: 120px;
         right: 20px;
-        width: 380px;
+        width: 320px;
     }
 
     #chat-bot-conversation li {

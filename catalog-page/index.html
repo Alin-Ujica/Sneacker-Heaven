@@ -12,25 +12,100 @@
 <body>
     <nav>
         <div class="hamburger">
-           <a href="#"><img src="../images/hamburger-menu.png" class="hamburger-btn"></a>
-        <a href="../index.html"><img src="../images/logo.png" class="logo2"></a>
+            <a href="#"><img src="../images/hamburger-menu.png" class="hamburger-btn"></a>
+            <a href="../index.html"><img src="../images/logo.png" class="logo2"></a>
         </div>
-         <div class="nav-categories">
+        <div class="nav-categories">
             <ul>
-                <li><a href="../catalog-page/index.html" class="link1"><h5 class="h5-purple">Bărbați</h5></a></li>
-                <li><a href="#" class="link1"><h5 class="h5-purple">Femei</h5></a></li>
-                <li><a href="#" class="link1"><h5 class="h5-purple">Copii</h5></a></li>
+                <li class="desktop-nav-hovers"><a href="../catalog-page/index.html" class="link1">
+                        <h5 class="h5-purple">Bărbați</h5>
+                    </a></li>
+                <li class="desktop-nav-hovers"><a href="#" class="link1">
+                        <h5 class="h5-purple">Femei</h5>
+                    </a></li>
+                <li class="desktop-nav-hovers"><a href="#" class="link1">
+                        <h5 class="h5-purple">Copii</h5>
+                    </a></li>
             </ul>
-         </div>
-         <a href="../index.html"><img src="../images/logo.png" class="logo"></a>
-         <div class="nav-buttons">
-            <label for="search"><img src="../images/search-icon.png"></label>
+        </div>
+        <a href="../index.html"><img src="../images/logo.png" class="logo"></a>
+        <div class="nav-buttons">
+            <label for="search"><img src="../images/search-icon.png" id="search-bar-icon"></label>
             <input type="text" placeholder="Search" name="search" id="search">
             <a href="../login-page/index.html"><img src="../images/account-icon.png" alt="Account"></a>
             <a href="#"><img src="../images/heart-icon.png" alt="Favorites"></a>
             <a href="../cart-page-empty/index.html"><img src="../images/cart-icon.png" alt="Cart"></a>
         </div>
     </nav>
+    <div id="desktop-nav">
+        <div class="desktop-nav-categories">
+            <img src="../images/circle-image-1.png">
+            <h1>Îmbrăcăminte</h1>
+            <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor </li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </div>
+        <div class="desktop-nav-categories">
+            <img src="../images/circle-image-2.png">
+            <h1>Încălțăminte</h1>
+            <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor </li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </div>
+        <div class="desktop-nav-categories">
+            <img src="../images/circle-image-3.png">
+            <h1>Accesorii</h1>
+            <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor </li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </div>
+    </div>
+    <div id="mobile-nav">
+        <ul>
+            <li class="nav-button"><a href="#" class="link1">
+                    <h5 class="h5-purple">Bărbați</h5>
+                </a></li>
+            <ul class="mobile-nav-categories">
+                <li class="clothing">Îmbrăcăminte</li>
+                <li class="shoes"><a href="catalog-page/index.html">Încălțăminte</a></li>
+                <li class="accesories">Accesorii</li>
+            </ul>
+            <li class="nav-button"><a href="#" class="link1">
+                    <h5 class="h5-purple">Femei</h5>
+                </a></li>
+            <ul class="mobile-nav-categories">
+                <li class="clothing">Îmbrăcăminte</li>
+                <li class="shoes"><a href="catalog-page/index.html">Încălțăminte</a></li>
+                <li class="accesories">Accesorii</li>
+            </ul>
+            <li class="nav-button"><a href="#" class="link1">
+                    <h5 class="h5-purple">Copii</h5>
+                </a></li>
+            <ul class="mobile-nav-categories">
+                <li class="clothing">Îmbrăcăminte</li>
+                <li class="shoes"><a href="catalog-page/index.html">Încălțăminte</a></li>
+                <li class="accesories">Accesorii</li>
+            </ul>
+        </ul>
+    </div>
+    <div id="mobile-search-bar">
+        <form action="#">
+            <input type="text" name="mobile-search" id="mobile-search" placeholder="Caută produsele tale">
+            <img src="../images/nav-exit-button.png" alt="" id="search-exit-button">
+        </form>
+    </div>
     <section class="products"> 
         <h1>Încălțăminte Bărbați</h1> 
         <div class="catalog-filters">
@@ -84,7 +159,7 @@
             <div class="product-model product-1">
                <!-- De aici ajungi la product page -->
                 <a href="../product-page/index.html"><div class="product-image product-image-1">
-                    <img src="images/heart-icon.png" alt="">
+                    <img src="../images/heart-icon.png" alt="">
                     <h6 class="reduction">-30%</h6>
                 </div></a>
                 <h3>450.00 RON</h3>
@@ -93,7 +168,7 @@
             </div>
             <div class="product-model product-2">
                 <div class="product-image product-image-2">
-                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
                 <h3>450.00 RON</h3>
@@ -102,7 +177,7 @@
             </div>
             <div class="product-model product-3">
                 <div class="product-image product-image-3">
-                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-20%</h6>
                 </div>
                 <h3>247.99 RON</h3>
@@ -111,7 +186,7 @@
             </div>
             <div class="product-model product-4">
                 <div class="product-image product-image-4">
-                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
                 <h3>549.00 RON</h3>
@@ -120,7 +195,7 @@
             </div>
             <div class="product-model product-5">
                 <div class="product-image product-image-5">
-                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-5%</h6>
                 </div>
                 <h3>750.00 RON</h3>
@@ -129,7 +204,7 @@
             </div>
             <div class="product-model product-6">
                 <div class="product-image product-image-6">
-                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
                 <h3>356.00 RON</h3>
@@ -138,7 +213,7 @@
             </div>
             <div class="product-model product-7">
                 <div class="product-image product-image-7">
-                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
                 <h3>639.99 RON</h3>
@@ -147,7 +222,7 @@
             </div>
             <div class="product-model product-8">
                 <div class="product-image product-image-8">
-                    <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                     <h6 class="reduction">-30%</h6>
                 </div>
                 <h3>639.99 RON</h3>
@@ -156,7 +231,7 @@
             </div>
             <div class="product-model product-1">
                  <a href="../product-page/index.html"><div class="product-image product-image-1">
-                     <img src="images/heart-icon.png" alt="">
+                     <img src="../images/heart-icon.png" alt="">
                      <h6 class="reduction">-30%</h6>
                  </div></a>
                  <h3>450.00 RON</h3>
@@ -165,7 +240,7 @@
              </div>
              <div class="product-model product-2">
                  <div class="product-image product-image-2">
-                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                      <h6 class="reduction">-30%</h6>
                  </div>
                  <h3>450.00 RON</h3>
@@ -174,7 +249,7 @@
              </div>
              <div class="product-model product-3">
                  <div class="product-image product-image-3">
-                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                      <h6 class="reduction">-20%</h6>
                  </div>
                  <h3>247.99 RON</h3>
@@ -183,7 +258,7 @@
              </div>
              <div class="product-model product-4">
                  <div class="product-image product-image-4">
-                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                      <h6 class="reduction">-30%</h6>
                  </div>
                  <h3>549.00 RON</h3>
@@ -192,7 +267,7 @@
              </div>
              <div class="product-model product-5">
                  <div class="product-image product-image-5">
-                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                      <h6 class="reduction">-5%</h6>
                  </div>
                  <h3>750.00 RON</h3>
@@ -201,7 +276,7 @@
              </div>
              <div class="product-model product-6">
                  <div class="product-image product-image-6">
-                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                      <h6 class="reduction">-30%</h6>
                  </div>
                  <h3>356.00 RON</h3>
@@ -210,7 +285,7 @@
              </div>
              <div class="product-model product-7">
                  <div class="product-image product-image-7">
-                     <a href="#"><img src="images/heart-icon.png" alt=""></a>
+                     <a href="#"><img src="../images/heart-icon.png" alt=""></a>
                      <h6 class="reduction">-30%</h6>
                  </div>
                  <h3>639.99 RON</h3>
